@@ -1,0 +1,25 @@
+{
+  "name": "publish-post",
+  "version": "1.0.0",
+  "description": "script to publish post to ductran.net",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/englishlayup/publish-post.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/englishlayup/publish-post/issues"
+  },
+  "homepage": "https://github.com/englishlayup/publish-post#readme",
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "redis-om": "^0.3.0"
+  }
+}
