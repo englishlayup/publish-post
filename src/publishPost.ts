@@ -1,11 +1,20 @@
 import path from "path";
 import fs from 'fs';
-import matter from 'gray-matter';
+import matter, { test } from 'gray-matter';
 import { createPost } from "./redis";
+import { exit, argv, argv0 } from "process";
+
 
 const postsDir = path.join(process.cwd(), 'posts')
 
-function parseFile(filename: string) {
+interface Post {
+    title: string;
+    date: Date;
+    description: string;
+    content: string;
+}
+
+async function publish(filename: string) {
     let fullPath: string;
 
     if(filename.endsWith('.md')) {
@@ -18,24 +27,16 @@ function parseFile(filename: string) {
 
     const matterResult = matter(fileContent)
 
-    return {
-        ...matterResult.data
+    const post:Post = {
+        title: matterResult.data.title,
+        date: new Date(),
+        description: matterResult.data.description,
+        content: matterResult.content,
     }
-}
 
-interface Post {
-    title: string;
-    date: Date;
-    description: string;
-    content: string;
-}
-
-async function publish(filename: string) {
-    const data = parseFile(filename)
-
-    data.date = Date.now()
-
-    const id = await createPost(data as Post)
+    const id = await createPost(post)
     
     console.log(id)
 }
+
+publish(argv[2]).then(() => exit())

@@ -1,9 +1,11 @@
 import { Client, Entity, Schema } from "redis-om";
+import { config } from "dotenv";
 
 const client = new Client();
 
 async function connect() {
     if(!client.isOpen()){
+        config();
         await client.open(process.env.REDIS_URL)
     }
 }

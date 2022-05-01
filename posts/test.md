@@ -1,6 +1,6 @@
 ---
 title: First Post
-description: 
+description: bla bla bla
 ---
 
 In this post I will discuss how I built this blog using Next.js, TypeScript, Markdown and Redis. You can find the source code for this site [here](https://github.com/englishlayup/ductran.net).
