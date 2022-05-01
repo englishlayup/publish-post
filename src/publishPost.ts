@@ -2,7 +2,7 @@ import path from "path";
 import fs from 'fs';
 import matter, { test } from 'gray-matter';
 import { createPost } from "./redis";
-import { exit, argv, argv0 } from "process";
+import { exit, argv } from "process";
 
 
 const postsDir = path.join(process.cwd(), 'posts')
