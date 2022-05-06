@@ -5,13 +5,13 @@ description: In this post I will discuss how I built this blog using Next.js, Ty
 
 In this post I will discuss how I built this blog using Next.js, TypeScript, Markdown and Redis. You can find the source code for this site [here](https://github.com/englishlayup/ductran.net).
 
-## **Why**
+## Why
 
 As of now, I have just graduated from university. During my job search, I see that there are a lot of demand for web developers; so I think knowing how to create and maintain a website are valuable skills. I want to get into a habit of coding/writing. Making my own blog kills two birds with one stone.
 
-## **How**
+## How
 
-### **Next.js**
+### Next.js
 
 Depending on when you read this, the site could look identical to the [Next.js blog example](https://nextjs.org/learn/basics/create-nextjs-app) since I followed the tutorial as a starting point. It is intuitive to follow and all the concepts are explained clearly, which is why I this framework appeals to me.
 
@@ -23,20 +23,20 @@ Moreover, Next.js offers advanced built-in features that are too time-consuming 
 * [Vercel](https://vercel.com/) makes deploying the site easy. All I had to do was add my GitHub link and custom domain to the project. Now it automatically re-build and deploy whenever I made a pull request (PR).
 * Integrate TypeScript experience.
 
-### **TypeScript**
+### TypeScript
 
 I like types. I like to know what types I am using for variables and functions.
 
-### **Redis**
+### Redis
 
 Redis is adaptable. It can be both an in-memory cache or persistent database. It also supports multiple database paradigm. Because I want this project to give me exposure to more concepts and technologies, I think Redis offers the flexibility I need.
 I am using Redis as a document database for this blog. It is hosted on Redis Cloud free tier with 30 MB storage. Given this post is around 1 KB, I think I'll be fine until I write 30720 posts.
 
-### **Markdown**
+### Markdown
 
 I am using the same system as the [Next.js blog example](https://nextjs.org/learn/basics/create-nextjs-app). However, at build time the server fetch post data from the Redis DB instead of the local './posts' directory.
 
-### **How it all comes together**
+### How it all comes together
 
 Now that I've explained why I picked those tools, let's talk about how they work together.
 

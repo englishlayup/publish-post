@@ -1,8 +1,8 @@
-import path from "path";
 import fs from 'fs';
-import matter, { test } from 'gray-matter';
+import matter from 'gray-matter';
+import path from "path";
+import { argv, exit } from "process";
 import { createPost } from "./redis";
-import { exit, argv } from "process";
 
 
 const postsDir = path.join(process.cwd(), 'posts')

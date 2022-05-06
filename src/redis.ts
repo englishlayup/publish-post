@@ -1,5 +1,5 @@
-import { Client, Entity, Schema } from "redis-om";
 import { config } from "dotenv";
+import { Client, Entity, Schema } from "redis-om";
 
 const client = new Client();
 
