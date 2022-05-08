@@ -19,9 +19,9 @@ Moreover, I think it will take too much time to implement the built-in features 
 
 Moreover, Next.js offers advanced built-in features that are too time-consuming and complex for me to implement. Among them, the ones that I found most useful so far are:
 
-* Pre-rendering to improve page load time and search engine optimization.
-* [Vercel](https://vercel.com/) makes deploying the site easy. All I had to do was add my GitHub link and custom domain to the project. Now it automatically re-build and deploy whenever I made a pull request (PR).
-* Integrate TypeScript experience.
+- Pre-rendering to improve page load time and search engine optimization.
+- [Vercel](https://vercel.com/) makes deploying the site easy. All I had to do was add my GitHub link and custom domain to the project. Now it automatically re-build and deploy whenever I made a pull request (PR).
+- Integrate TypeScript experience.
 
 ### TypeScript
 
