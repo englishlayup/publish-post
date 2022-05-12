@@ -1,5 +1,5 @@
 ---
-title: Discord Images
+title: Discord is just a free unlimited fast storage server
 description: Discord is an amazing messaging application, but can it be more? Let's see if using Discord as an image CDN is viable.
 ---
 
