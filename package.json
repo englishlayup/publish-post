@@ -23,6 +23,7 @@
   "dependencies": {
     "dotenv": "^16.0.0",
     "gray-matter": "^4.0.3",
+    "node-fetch": "^3.2.4",
     "redis-om": "^0.3.0",
     "tslib": "^2.4.0"
   }
