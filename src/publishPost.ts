@@ -11,6 +11,7 @@ interface Post {
   date: Date;
   description: string;
   content: string;
+  filename: string;
 }
 
 async function publish(filename: string) {
@@ -31,6 +32,7 @@ async function publish(filename: string) {
     date: new Date(),
     description: matterResult.data.description,
     content: matterResult.content,
+    filename: filename,
   };
 
   const id = await createPost(post);

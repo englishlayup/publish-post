@@ -15,6 +15,7 @@ interface Post {
   date: Date;
   description: string;
   content: string;
+  filename: string;
 }
 
 class Post extends Entity {}
@@ -22,10 +23,11 @@ class Post extends Entity {}
 const schema = new Schema(
   Post,
   {
-    title: { type: "string" },
+    title: { type: "text" },
     date: { type: "date", sortable: true },
-    description: { type: "string" },
+    description: { type: "text" },
     content: { type: "string" },
+    filename: { type: "string" },
   },
   {
     dataStructure: "JSON",
@@ -37,6 +39,7 @@ export async function createPost(data: {
   date: Date;
   description: string;
   content: string;
+  filename: string;
 }) {
   await connect();
 
