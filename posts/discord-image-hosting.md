@@ -3,8 +3,6 @@ title: Discord is technically a fast, free and unlimited cloud storage
 description: Discord is an amazing messaging application, but can it be more? Let's see if using Discord as an image CDN is viable.
 ---
 
-Discord is an amazing messaging application, but can it be more? Let's see if using Discord as an image CDN is viable.
-
 ## What are you talking about?
 
 If you're unfamiliar with [Discord](https://discord.com/), it is a popular chat app targeting the gamer demographic. For the discussion in this blog, all you need to know is users can share attachments and images in the conversations. Once sent, you can get a link for the image by clicking on it and then "Open original". Then, everyone who have the link can view the image in their browser. However, unlike Facebook or Instagram, Discord does not compress images. So whenever you share an image to a conversation, Discord generates a unique link to its [CDN](https://www.cloudflare.com/en-ca/learning/cdn/what-is-a-cdn/).
