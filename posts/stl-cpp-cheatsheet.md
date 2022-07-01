@@ -1,7 +1,10 @@
 ---
-title:
-description:
+title: 105 C++ STL Algorithms Cheatsheet
+description: This post is like a transcript or "Ctrl+F-able" version of [CppCon 2018 Jonathan Boccara "105 STL Algorithms in Less Than an Hour"](https://www.youtube.com/watch?v=2olsGf6JIkU). Feel free to use this as a cheatsheet or reference to prepare for your C++ technical interview.
 ---
+
+![World Map of STL Algorithms](https://cdn.discordapp.com/attachments/972715461898829824/992489525509095564/world_map_of_cpp_STL_algorithms.png)
+[Source](https://www.fluentcpp.com/)
 
 ## Lands of Permutation
 
@@ -87,7 +90,7 @@ std::rotate(v.rbegin(), v.rbegin() + 1, v.rend())
 
 **reverse**: reverses the order of elements in a range
 
-### Secret Runes
+## Secret Runes
 
 **stable\_\***: keeps the relative order
 
@@ -237,3 +240,9 @@ _Sets are sorted ranges._
 **transform**: applies a function to a range of elements, storing results in a destination range
 
 **for_each**: applies a function to a range of elements
+
+## Raw Memory
+
+**uninitialized\_\***: calls the constructor and do operation on uninitialized memory
+
+**destroy**: calls the destructor
