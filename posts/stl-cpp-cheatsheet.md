@@ -4,7 +4,7 @@ description: This post is like a transcript or "Ctrl+F-able" version of [CppCon 
 ---
 
 ![World Map of STL Algorithms](https://cdn.discordapp.com/attachments/972715461898829824/992489525509095564/world_map_of_cpp_STL_algorithms.png)
-[Source](https://www.fluentcpp.com/)
+[Source](https://www.fluentcpp.com/GetTheMap/)
 
 ## Lands of Permutation
 
@@ -33,18 +33,21 @@ std::make_heap(begin(numbers), end(numbers)); // 9 8 6 7 4 5 2 0 3 1
 // remove largest element (the root) from heap
 std::pop_heap(begin(numbers), end(numbers)); // 8 7 6 3 4 5 2 0 1 9
 numbers.pop_back(); // 8 7 6 3 4 5 2 0 1
-
 ```
 
 ### Shore of Sorting
 
 **sort**: sorts a range into ascending order
 
-`std::sort(s.begin(), s.end());`
+```cpp - C++
+std::sort(s.begin(), s.end());
+```
 
 **partial_sort**: sorts the first N elements of a range
 
-`std::partial_sort(s.begin(), s.begin() + 5, s.end());`
+```cpp - C++
+std::partial_sort(s.begin(), s.begin() + 5, s.end());
+```
 
 **nth_element**: partially sorts the given range making sure that it is partitioned by the given element
 
@@ -132,7 +135,9 @@ std::count_if(v.begin(), v.end(), [](int i){return i % 4 == 0;})
 
 **count**: returns the number of elements satisfying specific criteria
 
-`std::count(v.cbegin(), v.cend(), target)`
+```cpp - C++
+std::count(v.cbegin(), v.cend(), target)
+```
 
 **accumulate / reduce**: sums up a range of elements (use reduce for parallelization)
 
@@ -140,18 +145,25 @@ std::count_if(v.begin(), v.end(), [](int i){return i % 4 == 0;})
 
 **inner_product**: computes the inner product (sum of products) of two ranges of elements
 
-`std::inner_product(a.begin(), a.end(), b.begin(), 0);`
+```cpp - C++
+std::inner_product(a.begin(), a.end(), b.begin(), 0);
+```
 
 **adjacent_difference**: computes the differences between adjacent elements in a range
 
-`std::adjacent_difference(v.begin(), v.end(), v.begin())`
+```cpp - C++
+std::adjacent_difference(v.begin(), v.end(), v.begin())
+```
 
 **sample**(C++17): selects n random elements from a sequence
 
 ### Querying a property
 
 **all_of / any_of / none_of**: checks if a predicate is true for all, any or none of the elements in a range
-`std::all_of(v.cbegin(), v.cend(), [](int i){ return i % 2 == 0; })`
+
+```cpp - C++
+std::all_of(v.cbegin(), v.cend(), [](int i){ return i % 2 == 0; })
+```
 
 ### Querying a property on 2 ranges
 
