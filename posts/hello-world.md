@@ -1,11 +1,11 @@
 ---
 title: Hello, World!
-description: In this post I will discuss how I built this blog using Next.js, TypeScript, Markdown and Redis.
+description: In this post I will discuss how I built this blog using Next.js, TypeScript, Markdown and Redis. You can find the source code for this site [here](https://github.com/englishlayup/ductran.net).
 ---
 
 ## Why
 
-As of now, I have just graduated from university. During my job search, I see that there are a lot of demand for web developers; so I think knowing how to create and maintain a website are valuable skills. I want to get into a habit of coding/writing. Making my own blog kills two birds with one stone. You can find the source code for this site [here](https://github.com/englishlayup/ductran.net).
+As of now, I have just graduated from university. During my job search, I see that there are a lot of demand for web developers; so I think knowing how to create and maintain a website are valuable skills. I want to get into a habit of coding/writing. Making my own blog kills two birds with one stone.
 
 ## How
 

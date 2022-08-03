@@ -89,7 +89,9 @@ std::rotate(v.rbegin(), v.rbegin() + 1, v.rend())
 
 **next_permutation**: generates the next greater lexicographic permutation of a range of elements
 
-**is_permutation**: generates the next smaller lexicographic permutation of a range of elements
+**prev_permutation**: generates the next smaller lexicographic permutation of a range of elements
+
+**is_permutation**: determines if a sequence is a permutation of another sequence
 
 **reverse**: reverses the order of elements in a range
 
